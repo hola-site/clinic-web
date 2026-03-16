@@ -750,6 +750,136 @@ margin-top:40px;
 margin-bottom: 15px;
 }
 
+/* ===== MOBILE FINAL FIX ===== */
+@media (max-width: 768px) {
+
+  /* navbar */
+  .navbar{
+    display:grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items:center !important;
+    gap:10px !important;
+    padding:10px 8px !important;
+  }
+
+  .logo{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:6px !important;
+    margin:0 !important;
+    font-size:12px !important;
+    white-space:nowrap !important;
+  }
+
+  .logo i{
+    width:30px !important;
+    height:30px !important;
+    font-size:14px !important;
+    flex-shrink:0 !important;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    gap:6px !important;
+    padding:0 !important;
+    margin:0 !important;
+    list-style:none !important;
+    scrollbar-width:none !important;
+    -ms-overflow-style:none !important;
+    min-width:0 !important;
+  }
+
+  .nav-links::-webkit-scrollbar{
+    display:none !important;
+  }
+
+  .nav-links li{
+    margin:0 !important;
+    padding:0 !important;
+    list-style:none !important;
+    flex:0 0 auto !important;
+  }
+
+  .nav-links a{
+    display:block !important;
+    padding:7px 10px !important;
+    font-size:12px !important;
+    line-height:1.1 !important;
+    white-space:nowrap !important;
+    margin:0 !important;
+  }
+
+  /* booking form */
+  .booking-form{
+    display:grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas:
+      "name phone"
+      "note note"
+      "date time"
+      "notes service"
+      "button button" !important;
+    gap:12px !important;
+    align-items:start !important;
+  }
+
+  .booking-form > *{
+    min-width:0 !important;
+    box-sizing:border-box !important;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea{
+    width:100% !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+  }
+
+  #fullName{
+    grid-area:name !important;
+  }
+
+  #phone{
+    grid-area:phone !important;
+  }
+
+  .booking-note{
+    grid-area:note !important;
+    margin:0 !important;
+    width:100% !important;
+  }
+
+  #date{
+    grid-area:date !important;
+  }
+
+  #time{
+    grid-area:time !important;
+  }
+
+  #notes{
+    grid-area:notes !important;
+    height:56px !important;
+    resize:none !important;
+  }
+
+  #service{
+    grid-area:service !important;
+  }
+
+  .booking-form button{
+    grid-area:button !important;
+    justify-self:center !important;
+    width:260px !important;
+    max-width:100% !important;
+  }
+}
+
 #booking{
 scroll-margin-top:100px;
 }
