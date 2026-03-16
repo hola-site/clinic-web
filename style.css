@@ -13,10 +13,11 @@ background:#f9f9f9;
 /* Navbar */
 
 .navbar{
+  padding-right: 11%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:20px 11% 20px 8%;
 background:white;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
 position:fixed;
@@ -57,11 +58,11 @@ list-style:none;
 gap:20px;
 align-items:center;
 justify-content:center;
-margin:0;
+margin:0 40px 0 0;
 padding:0;
 flex:1;
 order: 2;
-margin-right: 120px;
+
 }
 
 .nav-links li{
@@ -838,7 +839,7 @@ transform:translateY(-50%) !important;
 display:flex !important;
 align-items:center !important;
 justify-content:center !important;
-margin-left: 15px !important;
+margin-left: 0 !important;
 }
 
 .logo i{
@@ -857,26 +858,12 @@ display:flex !important;
 align-items:center !important;
 gap:6px !important;
 margin:0 !important;
-padding:0 !important;
+padding:0 42px 0  0 !important;
 list-style:none !important;
 overflow-x:auto !important;
 white-space:nowrap !important;
 flex:1 !important;
 }
-
-  .nav-links{
-    display:flex !important;
-    flex-wrap:nowrap !important;
-    overflow-x:auto !important;
-    overflow-y:hidden !important;
-    gap:6px !important;
-    padding:0 !important;
-    margin:0 !important;
-    list-style:none !important;
-    scrollbar-width:none !important;
-    -ms-overflow-style:none !important;
-    min-width:0 !important;
-  }
 
   .nav-links::-webkit-scrollbar{
     display:none !important;
