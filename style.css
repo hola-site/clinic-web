@@ -635,40 +635,52 @@ grid-template-areas:
 "name phone"
 "note note"
 "date time"
-"notes service"
+"service notes"
 "button button" !important;
 gap:12px !important;
+align-items:start !important;
+}
+
+.booking-form > *{
+min-width:0 !important;
 }
 
 #fullName{
 grid-area:name !important;
+width:100% !important;
 }
 
 #phone{
 grid-area:phone !important;
+width:100% !important;
 }
 
 .booking-note{
 grid-area:note !important;
-margin-bottom:0 !important;
+margin:0 !important;
+width:100% !important;
 }
 
 #date{
 grid-area:date !important;
+width:100% !important;
 }
 
 #time{
 grid-area:time !important;
-}
-
-#notes{
-grid-area:notes !important;
-height:56px !important;
-resize:none !important;
+width:100% !important;
 }
 
 #service{
 grid-area:service !important;
+width:100% !important;
+}
+
+#notes{
+grid-area:notes !important;
+width:100% !important;
+height:56px !important;
+resize:none !important;
 }
 
 .booking-form button{
