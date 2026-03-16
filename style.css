@@ -948,4 +948,24 @@ grid-column:1 / -1 !important;
 justify-self:center !important;
 width:260px !important;
 }
+
+
+}
+
+.field-box{
+display:flex;
+flex-direction:column;
+gap:6px;
+width:100%;
+}
+
+.field-box label{
+font-size:14px;
+font-weight:600;
+color:#2f3b46;
+padding-right:4px;
+}
+
+.field-box input{
+width:100%;
 }
