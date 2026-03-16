@@ -1,0 +1,732 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f9f9f9;
+}
+
+
+/* Navbar */
+
+.navbar{
+
+display:flex;
+justify-content: space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+position:fixed;
+top:0;
+left: 0;
+z-index:1000;
+width: 100%;
+}
+body{
+padding-top:100px;
+}
+
+.logo{
+
+color:#1f7a8c;
+margin-right:-90px;
+margin-left: -150px;
+
+}
+
+.nav-links{
+
+display:flex;
+list-style:none;
+gap:20px;
+align-items: center;
+margin: 0 auto;
+
+}
+
+
+
+/* ===== Navbar Buttons ===== */
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-size:20px;
+font-weight:500;
+padding:8px 14px;
+border: 2px solid #1f7a8c;
+border-radius:6px;
+transition:0.3s;
+white-space: nowrap;
+}
+
+.nav-links a:hover{
+background:#1f7a8c;
+color:white;
+}
+
+.nav-links a:hover{
+background:#1f7a8c;
+color:white;
+}
+
+.nav-links a:hover{
+color:#1f7a8c;
+
+}
+
+
+/* ===== Hero Section ===== */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url("hero.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:white;
+
+}
+
+.hero-text h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+font-size:20px;
+margin-bottom:25px;
+
+}
+
+.hero-btn{
+display:inline-block;
+padding:14px 30px;
+border:none;
+background:#0698b5;
+color:rgb(255,253,253);
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+text-decoration:none;
+}
+
+.hero-btn:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+background:#057c95;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+background: #057c95;
+}
+
+
+/* Services Section */
+
+.services{
+
+padding:80px 8%;
+background:#ffffff;
+
+}
+
+.section-title{
+
+text-align:center;
+font-size:35px;
+margin-bottom:50px;
+color:#333;
+position: relative;
+
+}
+.section-title::after{
+content:"";
+width:90px;
+height:4px;
+background:#1f7a8c;
+display:block;
+margin:15px auto 0;
+border-radius:3px;
+}
+
+.services-container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+.service-card{
+
+background:#f4f7f8;
+padding:20px;
+width:280px;
+text-align:center;
+border-radius:10px;
+border: 1px solid #eee;
+transition:0.3s;
+
+}
+.service-card p{
+color:#666;
+line-height:1.7;
+font-size: 18px !important;
+}
+.service-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-card img{
+
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:8px;
+
+}
+
+.service-card h3{
+
+margin-top:15px;
+margin-bottom:10px;
+
+}
+
+.service-card p{
+
+font-size:14px;
+color:#555;
+
+}
+
+/* Doctors Section */
+
+.doctors{
+
+padding:80px 8%;
+background:#f9f9f9;
+
+}
+
+.doctors-container{
+
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+.doctor-card{
+
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+width:260px;
+transition:0.3s;
+
+}
+
+.doctor-card:hover{
+
+transform:translateY(-8px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+
+}
+
+.doctor-card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:8px;
+transition: 0.3s;
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.doctor-card:hover img{
+transform:scale(1.05);
+}
+
+.doctor-card h3{
+
+margin-top:15px;
+
+}
+
+.doctor-card p{
+
+color:#666;
+margin-top:5px;
+
+}
+
+/* ===== About Section ===== */
+
+.about{
+
+padding:60px 8%;
+background:#ffffff;
+
+}
+
+.about-container{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.about-image img{
+
+width:420px;
+border-radius:10px;
+
+}
+
+.about-text{
+
+max-width:500px;
+
+}
+
+.about-text h2{
+
+color:#1f7a8c;
+margin-bottom:20px;
+font-size:32px;
+
+}
+
+.about-text p{
+margin-bottom:15px;
+line-height:1.5;
+color:#555;
+font-size:20px;
+font-weight:500;
+}
+
+/* ===== Navbar Buttons ===== */
+
+.nav-links a{
+
+text-decoration:none;
+
+color:#1f7a8c;
+
+font-size:16px;
+font-weight:600;
+
+padding:8px 16px;
+
+border:2px solid #1f7a8c;
+
+border-radius:12px;
+
+transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+background:#1f7a8c;
+color:white;
+
+}
+
+/* ===== Mobile Navbar ===== */
+
+@media (max-width:768px){
+
+.nav-links a{
+
+font-size:13px;
+padding:6px 10px;
+
+}
+
+.nav-links{
+
+gap:10px;
+
+}
+
+.logo{
+font-size:18px;
+}
+
+.nav-links{
+gap:6px;
+}
+
+.nav-links a{
+font-size:13px;
+padding:8px 10px;
+}
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:20px;
+
+}
+
+/* ===== Mobile Fix ===== */
+
+@media (max-width:768px){
+
+.logo{
+
+
+margin-left:15px;
+margin-right:-30px;
+
+}
+
+}
+
+.logo i{
+
+width:35px;
+height:35px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:#1f7a8c;
+color:white;
+
+border-radius:8px;
+
+flex-shrink:0;
+
+}
+
+.service-card img{
+width:100%;
+height:180px;
+object-fit:contain;
+border-radius:10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== Contact Section ===== */
+
+.contact{
+padding:80px 8%;
+background:#f8fbfc;
+text-align:center;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:30px;
+}
+
+.contact-info{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+max-width:700px;
+width:100%;
+text-align:right;
+line-height:2.2;
+border:1px solid #eef3f5;
+margin: 0 auto;
+}
+#contact{
+    scroll-margin-top: 20px;
+}
+
+#home,
+#services,
+#doctors,
+#about{
+scroll-margin-top:30px;
+}
+
+/* ===== Social Icons ===== */
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.social-icons a{
+width:45px;
+height:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#1f7a8c;
+color:white;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+transform:scale(1.1);
+background:#057c95;
+}
+
+.contact-info a{
+color:#1f7a8c;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.contact-info a:hover{
+color:#057c95;
+}
+.social-icons a{
+color:white !important;
+}
+
+/* ===== حجز الموعد ===== */
+.booking-note{
+background:#eef7f9;
+color:#1f4f59;
+padding:12px 15px;
+border-radius:10px;
+font-size:15px;
+line-height:1.8;
+text-align:right;
+margin-bottom:1px;
+border:1px solid #d7e9ee;
+}
+
+.booking-form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.booking-form textarea,
+.booking-note{
+grid-column:1 / -1;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+width:100%;
+padding:14px 16px;
+border:1px solid #d9e5ea;
+border-radius:12px;
+font-size:16px;
+background:#ffffff;
+color:#333;
+outline:none;
+transition:0.3s;
+box-sizing:border-box;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+border-color:#1f7a8c;
+box-shadow:0 0 0 3px rgba(31,122,140,0.12);
+}
+
+.booking-form button{
+padding:14px 20px;
+border:none;
+border-radius:12px;
+background:#1f7a8c;
+color:white;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+display: block;
+margin: 0 ;
+justify-self: center;
+width: 300px;
+grid-column: 1 / -1;
+}
+
+.booking-form button:hover{
+background:#166272;
+}
+
+@media (max-width:768px){
+.booking-form{
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+#fullName{
+grid-column:2 / 3;
+}
+
+#phone{
+grid-column:1 / 2;
+}
+
+.booking-note{
+grid-column:1 / -1;
+margin-bottom:10px;
+}
+
+#date{
+grid-column:2 / 3;
+}
+
+#time{
+grid-column:1 / 2;
+}
+
+#service{
+grid-column:2 / 3;
+}
+
+#notes{
+grid-column:1 / 2;
+height:56px;
+resize:none;
+}
+
+.booking-form{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"name phone"
+"note note"
+"date time"
+"service notes"
+"button button";
+gap:15px;
+}
+
+#fullName{
+grid-area:name;
+}
+
+#phone{
+grid-area:phone;
+}
+
+.booking-note{
+grid-area:note;
+margin-bottom:8px;
+}
+
+#date{
+grid-area:date;
+}
+
+#time{
+grid-area:time;
+}
+
+#service{
+grid-area:service;
+}
+
+#notes{
+grid-area:notes;
+height:56px;
+resize:none;
+}
+
+.booking-form button{
+grid-area:button;
+justify-self:center;
+width:260px;
+}
+.contact-info{
+max-width:100%;
+width:100%;
+padding:25px 15px;
+}
+.navbar{
+padding:12px 10px;
+}
+
+.logo{
+margin:0;
+font-size:14px;
+gap:6px;
+}
+
+.logo i{
+width:34px;
+height:34px;
+font-size:16px;
+}
+}
+
+.booking-form textarea{
+width:100%;
+height:54px;
+resize:none;
+grid-column: 2 / 3;
+}
+
+.booking-container{
+display:flex;
+justify-content:center;
+margin-top:10px;
+}
+
+.booking-form{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+border:1px solid #eef3f5;
+max-width:900px;
+width:100%;
+}
+.booking .section-title{
+margin-top:40px;
+margin-bottom: 15px;
+}
+
+#booking{
+scroll-margin-top:100px;
+}
+
+/* ===== sticker ===== */
