@@ -39,7 +39,7 @@ align-items:center;
 justify-content:center;
 flex-shrink:0;
 order: 1;
-
+transform: translateX(100px);
 }
 
 .logo i{
@@ -58,7 +58,8 @@ list-style:none;
 gap:20px;
 align-items:center;
 justify-content:center;
-margin:0 40px 0 0;
+margin:0;
+transform: translateX(35px);
 padding:0;
 flex:1;
 order: 2;
