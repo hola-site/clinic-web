@@ -38,6 +38,7 @@ align-items:center;
 justify-content:center;
 flex-shrink:0;
 order: 1;
+
 }
 
 .logo i{
@@ -56,7 +57,7 @@ list-style:none;
 gap:20px;
 align-items:center;
 justify-content:center;
-margin:0 auto;
+margin:0;
 padding:0;
 flex:1;
 order: 2;
@@ -404,6 +405,7 @@ font-size:18px;
 
 .nav-links{
 gap:6px;
+margin-right: 12px;
 }
 
 .nav-links a{
@@ -761,6 +763,7 @@ padding:0 !important;
 margin:0 !important;
 width:100% !important;
 list-style:none !important;
+margin-right: 120px !important;
 }
 
 .nav-links li{
