@@ -60,6 +60,7 @@ margin:0 auto;
 padding:0;
 flex:1;
 order: 2;
+margin-right: 12px;
 }
 
 .nav-links li{
