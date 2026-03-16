@@ -833,6 +833,7 @@ gap:6px !important;
 }
 
 .logo{
+  transform: translateY(-50%) !important;
 position:absolute !important;
 right:8px !important;
 top:50% !important;
