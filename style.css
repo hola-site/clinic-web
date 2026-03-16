@@ -13,39 +13,58 @@ background:#f9f9f9;
 /* Navbar */
 
 .navbar{
-
 display:flex;
-justify-content: space-between;
+justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 background:white;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
 position:fixed;
 top:0;
-left: 0;
+left:0;
 z-index:1000;
-width: 100%;
+width:100%;
 }
+
 body{
 padding-top:100px;
 }
 
 .logo{
-
 color:#1f7a8c;
-margin-right:-90px;
-margin-left: -150px;
+margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-shrink:0;
+order: 1;
+}
 
+.logo i{
+display:flex;
+align-items:center;
+justify-content:center;
+width:44px;
+height:44px;
+font-size:20px;
+margin:0;
 }
 
 .nav-links{
-
 display:flex;
 list-style:none;
 gap:20px;
-align-items: center;
-margin: 0 auto;
+align-items:center;
+justify-content:center;
+margin:0 auto;
+padding:0;
+flex:1;
+order: 2;
+}
 
+.nav-links li{
+margin:0;
+padding:0;
 }
 
 
@@ -901,11 +920,11 @@ align-items:start !important;
 }
 
 #fullName{
-grid-column:2 / 3 !important;
+grid-column:1 / 2 !important;
 }
 
 #phone{
-grid-column:1 / 2 !important;
+grid-column:2 / 3 !important;
 }
 
 .booking-note{
@@ -968,4 +987,9 @@ padding-right:4px;
 
 .field-box input{
 width:100%;
+}
+
+#phone{
+text-align:right;
+direction:rtl;
 }
