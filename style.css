@@ -593,42 +593,6 @@ background:#166272;
 
 @media (max-width:768px){
 .booking-form{
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-#fullName{
-grid-column:2 / 3;
-}
-
-#phone{
-grid-column:1 / 2;
-}
-
-.booking-note{
-grid-column:1 / -1;
-margin-bottom:10px;
-}
-
-#date{
-grid-column:2 / 3;
-}
-
-#time{
-grid-column:1 / 2;
-}
-
-#service{
-grid-column:2 / 3;
-}
-
-#notes{
-grid-column:1 / 2;
-height:56px;
-resize:none;
-}
-
-.booking-form{
 display:grid !important;
 grid-template-columns:1fr 1fr !important;
 grid-template-areas:
