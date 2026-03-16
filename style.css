@@ -968,7 +968,20 @@ justify-self:center !important;
 width:260px !important;
 }
 
+html, body{
+overflow-x:hidden !important;
+}
 
+header{
+width:100% !important;
+overflow:hidden !important;
+}
+
+.navbar{
+width:100% !important;
+box-sizing:border-box !important;
+padding:10px 8px !important;
+}
 }
 
 .field-box{
