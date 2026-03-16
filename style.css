@@ -894,67 +894,58 @@ padding-top:80px !important;
 
   /* booking form */
   .booking-form{
-    display:grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-areas:
-      "name phone"
-      "note note"
-      "date time"
-      "notes service"
-      "button button" !important;
-    gap:12px !important;
-    align-items:start !important;
-  }
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:12px !important;
+align-items:start !important;
+}
 
-  .booking-form > *{
-    min-width:0 !important;
-    box-sizing:border-box !important;
-  }
+#fullName{
+grid-column:2 / 3 !important;
+}
 
-  .booking-form input,
-  .booking-form select,
-  .booking-form textarea{
-    width:100% !important;
-    margin:0 !important;
-    box-sizing:border-box !important;
-  }
+#phone{
+grid-column:1 / 2 !important;
+}
 
-  #fullName{
-    grid-area:name !important;
-  }
+.booking-note{
+grid-column:1 / -1 !important;
+margin:0 !important;
+}
 
-  #phone{
-    grid-area:phone !important;
-  }
+#date{
+grid-column:2 / 3 !important;
+width:100% !important;
+}
 
-  .booking-note{
-    grid-area:note !important;
-    margin:0 !important;
-    width:100% !important;
-  }
+#time{
+grid-column:1 / 2 !important;
+width:100% !important;
+}
 
-  #date{
-    grid-area:date !important;
-  }
+#service{
+grid-column:1 / 2 !important;
+width:100% !important;
+}
 
-  #time{
-    grid-area:time !important;
-  }
+#notes{
+grid-column:2 / 3 !important;
+width:100% !important;
+height:56px !important;
+resize:none !important;
+}
 
-  #notes{
-    grid-area:notes !important;
-    height:56px !important;
-    resize:none !important;
-  }
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+width:100% !important;
+box-sizing:border-box !important;
+margin:0 !important;
+}
 
-  #service{
-    grid-area:service !important;
-  }
-
-  .booking-form button{
-    grid-area:button !important;
-    justify-self:center !important;
-    width:260px !important;
-    max-width:100% !important;
-  }
+.booking-form button{
+grid-column:1 / -1 !important;
+justify-self:center !important;
+width:260px !important;
+}
 }
