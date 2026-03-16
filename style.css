@@ -629,52 +629,52 @@ resize:none;
 }
 
 .booking-form{
-display:grid;
-grid-template-columns:1fr 1fr;
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
 grid-template-areas:
 "name phone"
 "note note"
 "date time"
-"service notes"
-"button button";
-gap:15px;
+"notes service"
+"button button" !important;
+gap:12px !important;
 }
 
 #fullName{
-grid-area:name;
+grid-area:name !important;
 }
 
 #phone{
-grid-area:phone;
+grid-area:phone !important;
 }
 
 .booking-note{
-grid-area:note;
-margin-bottom:8px;
+grid-area:note !important;
+margin-bottom:0 !important;
 }
 
 #date{
-grid-area:date;
+grid-area:date !important;
 }
 
 #time{
-grid-area:time;
-}
-
-#service{
-grid-area:service;
+grid-area:time !important;
 }
 
 #notes{
-grid-area:notes;
-height:56px;
-resize:none;
+grid-area:notes !important;
+height:56px !important;
+resize:none !important;
+}
+
+#service{
+grid-area:service !important;
 }
 
 .booking-form button{
-grid-area:button;
-justify-self:center;
-width:260px;
+grid-area:button !important;
+justify-self:center !important;
+width:260px !important;
 }
 .contact-info{
 max-width:100%;
