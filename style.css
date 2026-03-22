@@ -386,36 +386,6 @@ color:white;
 
 /* ===== Mobile Navbar ===== */
 
-@media (max-width:768px){
-
-.nav-links a{
-
-font-size:13px;
-padding:6px 10px;
-
-}
-
-.nav-links{
-
-gap:10px;
-
-}
-
-.logo{
-font-size:18px;
-}
-
-.nav-links{
-gap:6px;
-margin-right: 12px;
-length :100%;
-}
-
-.nav-links a{
-font-size:13px;
-padding:8px 10px;
-}
-}
 
 .logo{
 
@@ -427,17 +397,6 @@ gap:20px;
 
 /* ===== Mobile Fix ===== */
 
-@media (max-width:768px){
-
-.logo{
-
-
-margin-left:15px;
-margin-right:-30px;
-
-}
-
-}
 
 .logo i{
 
@@ -820,55 +779,57 @@ scroll-margin-top:100px;
 /* ===== MOBILE FINAL FIX ===== */
 @media (max-width: 768px) {
 
-  /* navbar */
-.navbar{
-position:sticky !important;
-top:0 !important;
-z-index:1000 !important;
-background:white !important;
-display:flex !important;
-align-items:center !important;
-justify-content:center !important;
-padding:10px 2px 10px 8px !important;
-gap:6px !important;
-width:100% !important;
-box-sizing:border-box !important;
-min-height:64px !important;
+  .navbar{
+  position:sticky !important;
+  top:0 !important;
+  z-index:1000 !important;
+  background:white !important;
+  display:grid !important;
+  grid-template-columns:auto 1fr !important;
+  align-items:center !important;
+  column-gap:8px !important;
+  padding:8px 6px !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  min-height:60px !important;
 }
 
-.logo{
-position:absolute !important;
-right:8px !important;
-top:50% !important;
-transform:translateY(-50%) !important;
-display:flex !important;
-align-items:center !important;
-justify-content:center !important;
-margin:0 !important;
-}
+  .logo{
+    grid-column:1 !important;
+    position:static !important;
+    transform:none !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    margin:0 !important;
+  }
 
-.logo i{
-display:flex !important;
-align-items:center !important;
-justify-content:center !important;
-width:30px !important;
-height:30px !important;
-font-size:14px !important;
-margin:0 !important;
-}
+  .logo i{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:30px !important;
+    height:30px !important;
+    font-size:14px !important;
+    margin:0 !important;
+  }
 
-.nav-links{
-order:1 !important;
-display:flex !important;
-align-items:center !important;
-gap:6px !important;
-margin:0 !important;
-padding:0 36px 0 0 !important;
-list-style:none !important;
-overflow-x:auto !important;
-white-space:nowrap !important;
-flex:1 !important;
-}
+  .nav-links{
+    grid-column:2 !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:6px !important;
+    margin:0 !important;
+    padding:0 !important;
+    list-style:none !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    white-space:nowrap !important;
+    min-width:0 !important;
+    flex:1 !important;
+    scrollbar-width:none !important;
+    -ms-overflow-style:none !important;
+  }
 
   .nav-links::-webkit-scrollbar{
     display:none !important;
@@ -889,88 +850,26 @@ flex:1 !important;
     white-space:nowrap !important;
     margin:0 !important;
   }
-header{
-position:fixed !important;
-top:0 !important;
-right:0 !important;
-left:0 !important;
-width:100% !important;
-z-index:9999 !important;
-background:#ffffff !important;
-box-shadow:0 2px 10px rgba(0,0,0,0.06) !important;
-}
 
-body{
-padding-top:80px !important;
-}
+  header{
+    position:fixed !important;
+    top:0 !important;
+    right:0 !important;
+    left:0 !important;
+    width:100% !important;
+    z-index:9999 !important;
+    background:#ffffff !important;
+    box-shadow:0 2px 10px rgba(0,0,0,0.06) !important;
+    overflow:hidden !important;
+  }
 
-  /* booking form */
-  .booking-form{
-display:grid !important;
-grid-template-columns:1fr 1fr !important;
-gap:12px !important;
-align-items:start !important;
-}
+  body{
+    padding-top:80px !important;
+  }
 
-#fullName{
-grid-column:1 / 2 !important;
-}
-
-#phone{
-grid-column:2 / 3 !important;
-}
-
-.booking-note{
-grid-column:1 / -1 !important;
-margin:0 !important;
-}
-
-#date{
-grid-column:2 / 3 !important;
-width:100% !important;
-}
-
-#time{
-grid-column:1 / 2 !important;
-width:100% !important;
-}
-
-#service{
-grid-column:1 / 2 !important;
-width:100% !important;
-}
-
-#notes{
-grid-column:2 / 3 !important;
-width:100% !important;
-height:56px !important;
-resize:none !important;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea{
-width:100% !important;
-box-sizing:border-box !important;
-margin:0 !important;
-}
-
-.booking-form button{
-grid-column:1 / -1 !important;
-justify-self:center !important;
-width:260px !important;
-}
-
-html, body{
-overflow-x:hidden !important;
-}
-
-header{
-width:100% !important;
-overflow:hidden !important;
-}
-
-
+  html, body{
+    overflow-x:hidden !important;
+  }
 }
 
 .field-box{
