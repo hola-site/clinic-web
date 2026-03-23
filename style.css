@@ -667,17 +667,7 @@ height:34px !important;
 font-size:16px !important;
 }
 
-.nav-links{
-display:grid !important;
-grid-template-columns:repeat(3, auto) !important;
-justify-content:center !important;
-gap:4px !important;
-padding:0 !important;
-margin:0 !important;
-width:100% !important;
-list-style:none !important;
-margin-right: 120px !important;
-}
+
 
 .nav-links li{
 margin:0 !important;
