@@ -55,7 +55,7 @@ margin:0;
 .nav-links{
 display:flex;
 list-style:none;
-gap:12px;
+gap:40px;
 align-items:center;
 justify-content:center;
 margin:0;
@@ -671,7 +671,7 @@ font-size:16px !important;
 display:grid !important;
 grid-template-columns:repeat(3, auto) !important;
 justify-content:center !important;
-gap:8px !important;
+gap:4px !important;
 padding:0 !important;
 margin:0 !important;
 width:100% !important;
@@ -688,7 +688,7 @@ list-style:none !important;
 .nav-links a{
 display:block !important;
 font-size:13px !important;
-padding:8px 10px !important;
+padding:0px 4px !important;
 line-height:1.2 !important;
 margin:0 !important;
 white-space:nowrap !important;
