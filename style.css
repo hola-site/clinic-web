@@ -71,57 +71,15 @@ margin:0;
 padding:0;
 }
 
-
-
-/* ===== Navbar Buttons ===== */
-.nav-links a{
-text-decoration:none;
-color:#333;
-font-size:20px;
-font-weight:500;
-padding:8px 14px;
-border: 2px solid #1f7a8c;
-border-radius:6px;
-transition:0.3s;
-white-space: nowrap;
-}
-
-.nav-links a:hover{
-background:#1f7a8c;
-color:white;
-}
-
-.nav-links a:hover{
-background:#1f7a8c;
-color:white;
-}
-
-.nav-links a:hover{
-color:#1f7a8c;
-
-}
-
-
 /* ===== Hero Section ===== */
-
 .hero{
-
 height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("hero.jpg");
-
-background-size:cover;
-background-position:center;
-
+background:#d2eff4;
 display:flex;
 align-items:center;
 justify-content:center;
-
 text-align:center;
-color:white;
-
+color:#1f2f3b;
 }
 
 .hero-text h1{
@@ -359,29 +317,21 @@ font-weight:500;
 /* ===== Navbar Buttons ===== */
 
 .nav-links a{
-
-text-decoration:none;
-
-color:#1f7a8c;
-
-font-size:16px;
-font-weight:600;
-
-padding:8px 16px;
-
-border:2px solid #1f7a8c;
-
-border-radius:12px;
-
-transition:0.3s;
-
+  text-decoration:none;
+  color:#0f4f59;
+  font-size:18px;
+  font-weight:700;
+  padding:0 6px;
+  border:none;
+  background:none;
+  border-radius:0;
+  transition:0.3s;
+  white-space:nowrap;
 }
 
 .nav-links a:hover{
-
-background:#1f7a8c;
-color:white;
-
+  color:#1497ab;
+  background:none;
 }
 
 /* ===== Mobile Navbar ===== */
@@ -820,7 +770,7 @@ scroll-margin-top:100px;
     grid-column:2 !important;
     display:flex !important;
     align-items:center !important;
-    gap:6px !important;
+    gap:4px !important;
     margin:0 0 0 8px !important;
     padding:0 !important;
     list-style:none !important;
@@ -845,14 +795,20 @@ scroll-margin-top:100px;
   }
 
   .nav-links a{
-    display:block !important;
-    padding:7px 10px !important;
-    font-size:12px !important;
-    line-height:1.1 !important;
-    white-space:nowrap !important;
-    margin:0 !important;
-  }
+  display:block !important;
+  padding:0 8px !important;
+  font-size:16px !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  white-space:nowrap !important;
+  margin:0 !important;
+  color:#1b5d68 !important;
+  -webkit-tap-highlight-color: transparent;
+}
 
+.nav-links a:hover{
+color:#1497ab !important;
+}
   header{
     position:fixed !important;
     top:0 !important;
@@ -872,6 +828,8 @@ scroll-margin-top:100px;
   html, body{
     overflow-x:hidden !important;
   }
+
+  
 }
 
 .field-box{
